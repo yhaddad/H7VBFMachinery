@@ -1,0 +1,12 @@
+
+request_disk          = 10000000
+executable            = script.sh
+transfer_input_files  = LHE-POWHEG.in,HiggsTemplateCrossSections.cc,HiggsTemplateCrossSections.h
+arguments             = $(jobfile) $(ProcId)
+output                = herwig.run.$(ClusterId).out
+error                 = herwig.run.$(ClusterId).err
+log                   = herwig.run.$(ClusterId).log
+transfer_output_files = ""
++JobFlavour           = "testmatch"
+
+queue jobfile from inputs.dat

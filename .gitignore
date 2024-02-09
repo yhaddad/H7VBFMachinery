@@ -1,0 +1,7 @@
+*.err
+*.log 
+*.out
+*.csv
+*.so
+./source
+./local
